@@ -1,0 +1,15 @@
+sets:
+  default:
+    - @services
+    - @sites
+
+  services:
+    - @services/reverse-proxy
+    - @services/mysql
+    - @services/redis
+    - @services/memcached
+
+  sites:
+    - testing
+    - rabbitmq
+  
